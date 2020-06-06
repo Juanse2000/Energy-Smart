@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(42, 46, 45);
+    background-size: 48%;
+ 
+}
+img{
+	width: 350px;
+	margin-top: -45px;
+    margin-left: 50px;
+}
+
+*{
+	margin:0px;
+	padding: 0px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	color: rgb(34, 31, 31);
+	font-family: arial;
+
+}
+
+.login{
+    text-align: center;
+    width: 400px;
+    background: #f6f7e5;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius:4px;
+    font-family:cursive;
+    color: rgb(31, 31, 31);
+    box-shadow: 7px 13px 37px #000;
+   
+}
+.form-register h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+.controls {
+    width: 100%;
+    background: #252522;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ffe600;
+    font-family: calibri;
+    font-size: 18px;
+    color: white;
+}
+.form-register p{
+     height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+    
+}
+
+.form-register a{
+    color: white;
+    text-decoration: none;
+}
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+form button{
+    width: 125px;
+    height: 40px;
+    margin: 20px 0px 30px 18px;
+    background: rgb(255, 255, 255)
+    border 1px solid rgb(255, 238, 0);
+    color: #000000;
+}
+
