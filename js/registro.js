@@ -1,20 +1,15 @@
-(function(){
-	var formulario = document.getElementsByName('registro')[0],
-	elementos = formulario.elements;
-	boton = document.getElementById('registrarme');
+function validarformulario(){
+	var nombre, contraseña, email;
+	nombre = document.getElementById("nombreR").value;
+	contraseña = document.getElementById("contraseñaR").value;
+	email = document.getElementById("emailR").value;
 
-	var validarTodo = function(e){
-		if(registro.nombresC.value == 0 && registro.contraseñaC.value == 0 && registro.correos.value == 0){
-			alert("Debe completar los campos");
-			e.preventDefault();
-		}				
-    };
-    
-	var validar = function(e) {
-		validarTodo(e);
-	};
-
-	formulario.addEventListener("submit", validar);
-	
-
-}())
+	if(nombre === "" || contraseña === "" || email === ""){
+		alert("Completar los campos");		
+		return false;
+	}
+	else if(nombre.length>5){
+		alert("Nombre demasiado largo");
+		return false;
+	}
+}
