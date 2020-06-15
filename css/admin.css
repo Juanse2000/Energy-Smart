@@ -9,12 +9,18 @@ body{
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.container{
-	width: 96%;
-	margin: 4%;
-}
 
 /* Estilo de la navegacion */
+#barras{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: rgb(255, 153, 0);
+}
+.menuVertical{
+	padding: 0px;
+	margin: 0px;
+}
 a{
 	color: white;
 	text-decoration: none;
@@ -22,15 +28,7 @@ a{
 ul{
 	list-style: none;
 }
-.menu{
-    font-size: 20px;
-    text-align: center;
-	height: 50px;
-	padding: 20px 20px;
-}
-.logo{
-	width: 250px;
-}
+
 .menu ul li{
     margin-left: 1000px;
 }
