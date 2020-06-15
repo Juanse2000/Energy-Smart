@@ -1,29 +1,52 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Recuperar contraseña</title>
-	<link rel="stylesheet" type="text/css" href="css/registrares.css">
-    <meta charset="utf-8"/>
+    <title>
+        Registro de usuario
+    </title>
+    <meta charset="utf-8">
+    <!-- Enlaza CSS -->
+    <link rel="stylesheet" type="text/css" href="css/formularios.css">
+    <!-- Enlaza JavasCript -->
+    <script src="js/recuCont.js"></script>
+    <!-- Lupa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <!-- Fuente Monserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap" rel="stylesheet">
 </head>
-   
 <body>
-       
-<header>
-	<img src="imagenes/logo.png">
-	<nav class="menu">
-		<ul>
-			<li><a href="sesion.html"><strong></strong>Iniciar sesion</strong></a></li>
-			<li><a href="registrar.html"><strong></strong>Registrar usuario</strong></a></li>
-			<li><a href="#"><strong></strong>Quienes somos</strong></a></li>
-			<li><a href="#"><strong></strong>Contacto</strong></a></li>
-		</ul>
-	</nav>
-</header>
-<form class="form-register" id="Registro">
-    <h4>Recuperar contraseña</h4>
-    <input class="controls" type="text" name="nombres " id="nombresC" placeholder="Nombre de usuario">
-    <input  class ="controls" type="email" name="correos " id="correos" placeholder="Email">          
-    <button class ="botons" formaction="index.html" type="submit" value="Iniciar sesion">Recuperar contraseña</button>   
-</form>
-<script src="js/recuCont.js"></script>
-</body>
+    <div class="container">	
+		<!-- -Navegacion -->	
+		<nav class="menu">
+			<a href="index.html"><img src="imagenes/logo.png" class="logo"></a>
+			<ul>
+				<li><a href="sesion.html"><strong></strong>Iniciar sesion</strong></a></li>
+				<li><a href="registrar.html"><strong></strong>Registrar usuario</strong></a></li>
+			</ul>
+			<ul class="nav-menu-right">
+				<li>
+					<a href="#">
+						<i class="fas fa-search"></i>
+						<span class="icon-creative-commons-noncommercial-eu"></span>
+					</a>
+				</li>			
+			</ul>
+        </nav>
+    </div>
+    <header>
+        <form class="form-register" id="formularioLogin" onsubmit="return validarRecu();">
+            <h4>Recuperar Contraseña</h4>
+            <input class="controls" type="email" id="EmailR" placeholder="Email">
+			<input class ="controls"  type="password" id="ContraseñaR" placeholder="Contraseña">
+			<input class ="controls"  type="password" id="ContraseñaR2" placeholder="Contraseña">
+                           
+            <button formaction="InterfazCliente.html"  class ="botons" id="boton" type="submit" value="Iniciar sesion">Validar</button>
+            <br/>
+            
+            <a href="index.html">Volver</a>
+        </form>
+        
+    </header>
+    
+    </body>
+    
+</html>

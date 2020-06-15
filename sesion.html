@@ -4,7 +4,10 @@
         Registro de usuario
     </title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/registrares.css">
+    <!-- Enlaza CSS -->
+    <link rel="stylesheet" type="text/css" href="css/formularios.css">
+    <!-- Enlaza JavasCript -->
+    <script src="js/login.js"></script>
     <!-- Lupa -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <!-- Fuente Monserrat -->
@@ -30,18 +33,18 @@
         </nav>
     </div>
     <header>
-        <form action="loginAdmin.html"class="form-register" name="formulario">
+        <form class="form-register" id="formularioLogin" onsubmit="return validarLogin();">
             <h4>Iniciar Sesion</h4>
-            <input class="controls" type="text" name="nombres " id="nombres" placeholder="Email">
-            <input class ="controls"  type="password" name="contraseña " id="contraseña" placeholder="Contraseña">
+            <input class="controls" type="email" id="EmailL" placeholder="Email">
+            <input class ="controls"  type="password" id="ContraseñaL" placeholder="Contraseña">
                            
-            <button formaction="loginAdmin.html"  class ="botons" id="boton" type="submit" value="Iniciar sesion">Iniciar sesion</button>
+            <button formaction="InterfazAdmin.html"  class ="botons" id="boton" type="submit" value="Iniciar sesion">Iniciar sesion</button>
             <br/>
             <a href="registrar.html">¿No tienes cuenta?</a><br/>
             <a href="RecuContraseña.html">¿Olvido su contraseña?</a><br/>
             <a href="index.html">Volver</a>
         </form>
-        <script src="js/sesionAdmin.js"></script>
+        
     </header>
     
     </body>
