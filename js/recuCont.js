@@ -7,7 +7,7 @@ function validarRecu(){
     expresion = /\w/;
     expresionCorreo = /\w+@\w+\.+[a-z]/;
 
-    if(correo == "" || contraseña1 == "" || contraseña2 == ""){
+    if(correo == "" || contraseña1 == "" || contraseña == ""){
         alert("Completar los campos");
         return false;
     }
