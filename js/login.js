@@ -15,8 +15,23 @@ function validarLogin(){
 	}
 
 	else if((contraseña != "1234567" && correo != "admin@gmail.com")
-		|| (contraseña != "1234567" || correo != "admin@gmail.com")){
+		|| (contraseña != "1234567" || correo != "admin@gmail.com")) {
 			alert("Acceso Denegado");
-			return false;
+			window.location.href = "InterfazAdmin.html"
+			return false;			
 	}
+	
 }
+function iniciarSesion(){
+	var correo;
+	correo = document.getElementById("EmailL").value;
+	switch(correo){
+		case "admin@gmail.com":
+		window.location.href = "InterfazAdmin.html";
+		break;
+		case "cliente@gmail.com":
+		window.location.href = "InterfazCliente.html";
+		break;
+	}
+	return correo;
+};

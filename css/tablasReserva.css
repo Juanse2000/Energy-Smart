@@ -4,8 +4,8 @@
 	padding: 0px;
 }
 body{
-	background: rgb(37, 37, 35);
-	color: rgb(255, 255, 255);
+	background: whitesmoke;
+	color: rgb(26, 25, 23);
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body{
 
 /* Estilo de la navegacion */
 a{
-	color: white;
+	color: rgb(26, 25, 23);
 	text-decoration: none;
 }
 ul{
@@ -40,7 +40,7 @@ ul{
 	padding: 20px;
 }
 .menu ul li a:hover{
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 2px solid #ff9900;
 }
 /* Estilo pagina principal - banner */
 
@@ -143,6 +143,7 @@ ul{
 #tReservaR{
 	text-align: center;
 }
+/* Tablas */
 table{
 	margin-left: 200px;
 	margin-top: 50px;
@@ -166,4 +167,8 @@ thead{
 }
 tr:nth-child(even){
 	background-color: rgb(180, 180, 180);
+}
+.parteInferiorReserv #Siguiente{
+	margin-left: 1200px;
+	font-size: 20px;
 }
