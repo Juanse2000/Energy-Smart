@@ -3,7 +3,7 @@
 <head>	
 	<title>Admin</title>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Dependencias de la grafica -->
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
@@ -35,14 +35,14 @@
 			</li>
 			<li class="activado"><a href="#"><i class="iconoIzquierda fas fa-box-open"></i>Inventario<i class="iconoDerecha fas fa-chevron-down"></i></a>
 				<ul>
-					<li><a href="#">Equipos en Prevencion</a></li>
-					<li><a href="#">Equipos en mantenimiento</a></li>
+					<li><a href="interfaceAdmin/Inventario.html">Inventario</a></li>
+					<li><a href="interfaceAdmin/Prevencion.html">Equipos en Prevencion</a></li>
+					<li><a href="interfaceAdmin/Mantenimiento.html">Equipos en mantenimiento</a></li>					
 				</ul>			
 			</li>
 			<li class="activado"><a href="#"><i class="iconoIzquierda fas fa-users"></i>Usuarios<i class="iconoDerecha fas fa-chevron-down"></i></a>
 				<ul>
-					<li><a href="#">Ultimos registros</a></li>
-					<li><a href="#">Todos los usuarios</a></li>
+					<li><a href="interfaceAdmin/Usuarios.html">Todos los usuarios</a></li>
 				</ul>			
 			</li>
 			<li class="activado"><a href=""><i class="iconoIzquierda fas fa-user-check"></i>Perfil<i class="iconoDerecha fas fa-chevron-down"></i></a>
@@ -67,8 +67,17 @@
 			<br/>
 			<br>
 			<div id="GraficaR2"></div>
+			<hr id="linea1admin">
+			<br/>
+			<br/>
+			<h2 id="titulo3"><strong>Cantidad Equipos en Prevencion y Mantenimiento <br/>
+			mensual</strong></h2>
+			<br/>
+			<br/>
+			<div id="GraficaI1"></div>
+			<br/>
+			<br/>
 		</section>
-		
 	</div>
 	
 	<script src="js/GraficaReservas.js"></script>
