@@ -1,0 +1,139 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: whitesmoke;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container{
+	width: 96%;
+	margin: 4%;
+}
+
+/* Estilo de la navegacion */
+a{
+	color: rgb(26, 25, 23);
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.menu{
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	padding: 20px 20px;
+}
+.logo{
+	width: 250px;
+}
+.menu ul{
+	display: flex;
+}
+.menu ul li{
+	padding: 20px;
+}
+.menu ul li a:hover{
+	border-bottom: 2px solid #ff9900;
+}
+/* Estilo pagina principal - banner */
+
+.letras-banner{
+	margin-top: 80px;
+	margin-left: 50px;
+	width: 250px;
+}
+.Eslogan-banner{
+	margin-left: 50px;	
+}
+.logo-banner{
+	margin-top: 120px;
+	margin-left: 400px;
+	width: 320px;
+}
+.resgistrate-reserva{
+	text-align: right;
+}
+.linea1{
+	margin-top: 60px;
+}
+.titulo-qs{
+	text-align: center;
+	margin-top: 60px;
+
+}
+.parrafo-qs{
+	text-align: center;
+	margin-right: 50px;
+	margin-left: 50px;
+
+}
+/* Parte del prfil */
+.perfil{
+    display: flex;
+    text-align: center;
+    height: 260px;
+    background: url("http://everynation.org/wp-content/uploads/2018/02/Monthly-Website-Header-background.jpg");
+}
+.perfil .lapiz{
+    padding: 10px;
+    color: whitesmoke;
+}
+.perfil #imagenAvatar{
+    margin-left: 500px;
+    width: 350px;
+    border-radius: 50%;
+}
+#tituloPer{
+    text-align: center;
+    padding-top: 20px;
+}
+.lapiz2{
+    font-size: 20px;
+    padding-right: 10px;
+}
+/* Datos */
+.iconosAvatar .iconosPerfil .editar{
+    display: flex;
+    margin-left: 170px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.iconosAvatar{
+    background: whitesmoke;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: rgb(34, 34, 32);
+}
+
+.iconosAvatar .iconosPerfil i{
+    text-align: center;
+    margin-top: 20px;
+	font-size: 100px;
+	width: 100%;
+	color: goldenrod;
+}
+.iconosAvatar .iconosPerfil h4{
+	text-align: center;
+	font-size: 22px;
+}
+/* Descripcion */
+.descripcion{
+    margin-top: 100px;
+    text-align: center;
+}
+.descripcion h2{
+    margin-top: 80px;
+    text-align: center;
+}
+.descripcion p{
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 100px;
+}
