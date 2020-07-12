@@ -12,24 +12,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">	
-		<!-- -Navegacion -->	
-		<nav class="menu">
-			<a href="usuario2.html"><img src="../../imagenes/logo.png" class="logo"></a>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li><a href="../Usuarios.html"><strong>Volver</strong></a></li>
-			</ul>
-        </nav>
-    </div>
+    <!-- -Navegacion -->	
+	<input type="checkbox" id="check">
+	<label for="check">
+	<i class=" fas fa-bars" id="btn"></i>
+	<i class=" fas fa-times" id="cancel"></i>
+	</label>
+	<nav class="menuNav">
+		<ul>
+			<li><a href="#quienes"><strong>Quienes somos</strong></a></li>
+			<li><a href="#contacto"><strong>Contacto</strong></a></li>
+			<li><a href="index.html"><strong>Cerrar Sesion</strong></a></li>
+		</ul>
+	</nav>	
+	<div class="sidebar" id="ContMenu">
+		<header><a href="InterfazAdmin.html" class="Logo"><img src="../../imagenes/logo.png" class="logoAdminI"></a></header>
+		<ul class="menuAdmin">
+			<li><a href="../../InterfazAdmin.html"><i class="iconoIzquierda fas fa-home"></i>Inicio administradores</a></li>
+			<li><a href=""><i class="iconoIzquierda fas fa-calendar-check"></i>Reservas<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="../reservasA.html">Reservas Realizadas</a></li>
+					<li><a href="../reservasH.html">Reservas Hoy</a></li>
+					<li><a href="../HistoricoR.html">Historico Reservas</a></li>
+				</ul>
+			</li>
+			<li class="activado"><a href="#"><i class="iconoIzquierda fas fa-box-open"></i>Inventario<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="../Inventario.html">Inventario</a></li>
+					<li><a href="../Prevencion.html">Equipos en Prevencion</a></li>
+					<li><a href="../Mantenimiento.html">Equipos en mantenimiento</a></li>					
+				</ul>			
+			</li>
+			<li class="activado"><a href="#"><i class="iconoIzquierda fas fa-users"></i>Usuarios<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="../Usuarios.html">Todos los usuarios</a></li>
+				</ul>			
+			</li>
+			<li class="activado"><a href=""><i class="iconoIzquierda fas fa-user-check"></i>Perfil<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="../Configuracion.html">Configuracion</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>         	
+	<div class="cuerpo-perfil">
     <div class="perfil">
+        <a href="../Usuarios.html" class="volver-perfil"><strong>Volver</strong></a>
         <img src="../../imagenes/perfilAvatarM.jpg" id="imagenAvatar">
-        <h1>LuisaGamer18</h1>
+        <h1>LuisaGamer12</h1>
     </div>
     <br/>
     <br/>
@@ -94,5 +124,6 @@
         </em>
         </p>
     </div>
+</div>
 </body>
 </html>

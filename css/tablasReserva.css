@@ -16,13 +16,14 @@ body{
 
 /* Estilo de la navegacion */
 a{
-	color: rgb(26, 25, 23);
+	color: whitesmoke;
 	text-decoration: none;
 }
 ul{
 	list-style: none;
 }
-.menu{
+.menuNav{
+	background: rgb(44, 44, 42);
 	font-size: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -33,117 +34,113 @@ ul{
 .logo{
 	width: 250px;
 }
-.menu ul{
+.menuNav ul{
+	margin-left: 800px;
 	display: flex;
 }
-.menu ul li{
+.menuNav ul li{
 	padding: 20px;
 }
-.menu ul li a:hover{
-	border-bottom: 2px solid #ff9900;
+.menuNav ul li a:hover{
+	border-bottom: 2px solid #ffffff;
 }
-/* Estilo pagina principal - banner */
+/* Menu Desplegable*/
 
-.letras-banner{
-	margin-top: 80px;
-	margin-left: 50px;
+.logoAdminI{
+	width: 200px;	
+}
+.sidebar{
+	position: fixed;
+	left: -250px;
 	width: 250px;
+	height: 100%;
+	background:  rgb(37, 37, 35);
+	transition: all .5s ease;
 }
-.Eslogan-banner{
-	margin-left: 50px;	
-}
-.logo-banner{
-	margin-top: 120px;
-	margin-left: 400px;
-	width: 320px;
-}
-.resgistrate-reserva{
-	text-align: right;
-}
-.linea1{
-	margin-top: 60px;
-}
-.titulo-qs{
-	text-align: center;
-	margin-top: 60px;
-
-}
-.parrafo-qs{
-	text-align: center;
-	margin-right: 50px;
-	margin-left: 50px;
-
-}
-.iconos{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-.iconos div i{
-	text-align: center;
-	font-size: 100px;
-	width: 100%;
-	color: rgb(255, 153, 0);
-}
-.iconos div h4{
-	text-align: center;
+.sidebar header{
 	font-size: 22px;
-}
-.iconos div p{
+	color: black;
 	text-align: center;
+	background: rgb(37, 37, 35);
+	user-select: none;
+	
 }
-.linea2{
-	margin-top: 40px;
+.sidebar .menuAdmin a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	color: rgb(238, 230, 223);
+	padding-left: 10px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
 }
-.footer-link{
-	background: #242222;	
+.sidebar ul{
+	padding: 5px;
 }
-.titulo-c{
-	margin-top: 30px;
-	padding-top: 10px;
-	text-align: center;
-	color: rgb(255, 255, 255);
+.menuAdmin li:hover a{
+	padding-left: 20px;
 }
-.parrafo-footer{
-	text-align: center;
-	color: rgb(182, 176, 151);	
+.menuAdmin li ul li{
+	background: rgb(58, 57, 49);
 }
-.iconos-footer{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	text-align: center;
-	font-size: 70px;
-	color: darkgoldenrod;
+.sidebar ul a i{
+	margin-right: 8px;
 }
-.footer-container a i{
-	font-size: 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 20px;
-	padding: 20px 20px;
-	color: darkgoldenrod;
+#check{
+	display: none;
 }
-.pContacto{
-	text-align: center;
-	font-size: 20px;
+label #btn,label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: rgb(14, 13, 13);
+	border-radius: 3px;
 }
-.pCorreo{
-	text-align: center;
-	font-size: 20px;
-}
-.iconos-footer p{
-	margin-bottom: 50px;
+label #btn{
+	left: 40px;
+	top: 25px;
+	font-size: 35px;
 	color: whitesmoke;
-	text-align: center;
-	font-size: 15px;
+	padding: 6px 12px;
+	transition: all .5s;
 }
-.footer-container ul{
-	display: flex;
+label #cancel{
+	z-index: 1111;
+	left: -215px;
+	top: 17px;
+	font-size: 20px;
+	color: whitesmoke;
+	padding: 3px 6px;
+	transition: all .5s ease;
 }
-#tReservaR{
-	text-align: center;
+#check:checked ~ .sidebar{
+	left: 0;
+}
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+	left: 215px;
+}
+#check:checked ~ header #tablaResR{
+	margin-left: 250px;
+}
+#check:checked ~ .cuerpo{
+	margin-left: 250px;
 }
 /* Tablas */
+header{
+	padding-left: 50px ;
+}
+#tReservaR{
+	padding-top: 50px;
+	text-align: center;
+}
 table{
 	margin-left: 200px;
 	margin-top: 50px;
@@ -154,7 +151,12 @@ table{
 	background: #f8f8f6;
 	color: rgb(20, 20, 19);
 	border-collapse: collapse ;
+	transition: all .5s;
 }
+.link-perfil{
+	color: rgb(29, 29, 26);
+}
+
 th, td{
 	border: solid 2px #242222;
 	
@@ -171,4 +173,100 @@ tr:nth-child(even){
 .parteInferiorReserv #Siguiente{
 	margin-left: 1200px;
 	font-size: 20px;
+}
+.caja-check{
+	margin-left: 35px;
+}
+/* Parte inferior */
+#boton-eliminar{
+	background: rgb(255, 60, 0);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+	width: 170px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgb(221, 0, 0);
+	margin-left: 270px;
+	margin-top: 40px;
+}
+#boton-graficasR{
+	background: rgb(255, 60, 0);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+	width: 170px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgb(221, 0, 0);
+	margin-left: 450px;
+	margin-top: 40px;
+}
+#boton-graficasR span{
+	margin-right: 10px;
+}
+#boton-descargasR{
+	background: rgb(0, 255, 76);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+	width: 170px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px green;
+	margin-left: 30px;
+	margin-top: 40px;
+}
+.parteInferiorReserv a i{
+	margin-right: 10px;
+}
+
+/* Graficas */
+.cuerpo{
+	transition: all .5s;
+}
+.volver{
+	color: rgb(30, 31, 28);
+	margin-left: 1250px;
+	font-size: 23px;	
+}
+.volver:hover{
+	border-bottom: 2px solid rgb(22, 22, 21);
+}
+.cuerpo section h1{
+	font-size: 40px;
+	margin-top: 50px;
+	padding-top: 10px;
+	text-align: center;
+}
+#titulo2{
+	margin-left: 200px;
+	margin-top: 60px;
+	padding: 30px;
+}
+#titulo3{
+	margin-left: 200px;
+	padding: 30px;
+}
+#GraficaR{
+	align-items: center;
+	width: 800px;
+	height: 400px;
+	margin-left: 200px;
+	padding-bottom: 80px;
+}
+#GraficaR2{
+	align-items: center;
+	width: 800px;
+	margin-left: 200px;
+}
+#GraficaI1{
+	align-items: center;
+	width: 800px;
+	height: 400px;
+	margin-left: 200px;
+	padding-bottom: 80px;
 }

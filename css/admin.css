@@ -10,8 +10,37 @@
 body{
 	font-family: 'Montserrat Alternates', sans-serif;
 }
-
 /* Estilo de la navegacion */
+a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.menuNav{
+	background: rgb(44, 44, 42);
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	padding: 20px 20px;
+}
+.logo{
+	width: 250px;
+}
+.menuNav ul{
+	margin-left: 800px;
+	display: flex;
+}
+.menuNav ul li{
+	padding: 20px;
+}
+.menuNav ul li a:hover{
+	border-bottom: 2px solid #ffffff;
+}
+/* Menu Desplegable*/
 
 .logoAdminI{
 	width: 200px;	
@@ -90,47 +119,38 @@ label #cancel{
 	opacity: 0;
 	pointer-events: none;
 }
+/* Interfaz Admin */
+.banner{
+	padding-left: 100px;
+}
+.letras-banner{
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 280px;
+}
+.Eslogan-banner{
+	margin-left: 40px;	
+}
+.logo-banner{
+	margin-top: 120px;
+	margin-left: 300px;
+	width: 350px;
+}
+.resgistrate-reserva{
+	text-align: right;
+}
+
+
 #check:checked ~ label #cancel{
 	left: 215px;
 }
-#check:checked ~ .cuerpo section{
+#check:checked ~ .banner{
 	margin-left: 250px;
 }
-.cuerpo section{
+.banner{
 	background: whitesmoke;
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
 	transition: all .5s;
-}
-.cuerpo section h1{
-	margin-top: 25px;
-	padding-top: 10px;
-	text-align: center;
-}
-#titulo2{
-	text-align: center;
-	padding: 30px;
-}
-#titulo3{
-	text-align: center;
-	padding: 30px;
-}
-#GraficaR{
-	align-items: center;
-	width: 800px;
-	margin-left: 200px;
-}
-#GraficaR2{
-	align-items: center;
-	width: 800px;
-	margin-left: 200px;
-}
-.cuerpo section #linea1admin{
-    margin-top: 40px;
-}
-#GraficaI1{
-	align-items: center;
-	width: 800px;
-	margin-left: 200px;
 }

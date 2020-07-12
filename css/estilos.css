@@ -11,7 +11,7 @@ body{
 
 .container{
 	width: 96%;
-	margin: 4%;
+	margin: 4%
 }
 
 /* Estilo de la navegacion */
@@ -42,27 +42,122 @@ ul{
 .menu ul li a:hover{
 	border-bottom: 2px solid #ffffff;
 }
-/* Estilo pagina principal - banner */
+/* Banner tipo Slide con imagenes */
+#titulo-cliente{
+    text-align: center;
+}
+.slide{
+    width: 100%;
+    max-width: 1220px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;  
 
-.letras-banner{
-	margin-top: 80px;
-	margin-left: 50px;
-	width: 250px;
 }
-.Eslogan-banner{
-	margin-left: 50px;	
+.slideImg{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
-.logo-banner{
-	margin-top: 120px;
-	margin-left: 400px;
-	width: 320px;
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
 }
-.resgistrate-reserva{
-	text-align: right;
+.item-slide img{
+    padding-top: 50px;
+    width: 1300px;
+    height: 500px;
+
 }
+.paginacion{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.paginacion-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid honeydew;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(36, 35, 33);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+.paginacion-item:hover{
+    transform: scale(1.5);
+}
+.paginacion-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+.paginacion-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+input[id="1"]:checked ~ .slideImg{
+    animation: none;
+    transform: translate3d(0,0,0);
+}
+input[id="1"]:checked ~ .paginacion .paginacion-item[for="1"]{
+    background: goldenrod;
+}
+input[id="2"]:checked ~ .slideImg{
+    animation: none;
+    transform: translate3d(calc(-100% * 1),0,0);
+}
+input[id="2"]:checked ~ .paginacion .paginacion-item[for="2"]{
+    background: goldenrod;
+}
+input[id="3"]:checked ~ .slideImg{
+    animation: none;
+    transform: translate3d(calc(-1300px * 2),0,0);
+}
+input[id="3"]:checked ~ .paginacion .paginacion-item[for="3"]{
+    background: goldenrod;
+}
+
+/* Transicion automatica */
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0),0,0);
+    }
+    66%{
+        transform: translate3d(calc(-100% * 1),0,0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 2),0,0);
+    }
+}
+
 .linea1{
 	margin-top: 60px;
+	width: 1200px;
 }
+/* Servicios */
 .titulo-qs{
 	text-align: center;
 	margin-top: 60px;
@@ -93,7 +188,10 @@ ul{
 }
 .linea2{
 	margin-top: 40px;
+	width: 1200px;
 }
+
+/* Pie de pagina */
 .footer-link{
 	background: #242222;	
 }

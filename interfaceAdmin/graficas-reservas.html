@@ -4,6 +4,11 @@
 	<title>Admin</title>
 	<meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dependencias de la grafica -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <!-- Enlaza CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/tablasReserva.css">
 	<!-- Iconos -->
@@ -21,14 +26,14 @@
 	<nav class="menuNav">
 		<ul>
 			<li><a href="#quienes"><strong>Quienes somos</strong></a></li>
-			<li><a href="#contacto"><strong>Contacto</strong></a></li>
+            <li><a href="#contacto"><strong>Contacto</strong></a></li>
 			<li><a href="index.html"><strong>Cerrar Sesion</strong></a></li>
 		</ul>
 	</nav>	
 	<div class="sidebar" id="ContMenu">
 		<header><a href="InterfazAdmin.html" class="Logo"><img src="../imagenes/logo.png" class="logoAdminI"></a></header>
 		<ul class="menuAdmin">
-			<li><a href="InterfazAdmin.html"><i class="iconoIzquierda fas fa-home"></i>Inicio administradores</a></li>
+			<li><a href="../InterfazAdmin.html"><i class="iconoIzquierda fas fa-home"></i>Inicio administradores</a></li>
 			<li><a href=""><i class="iconoIzquierda fas fa-calendar-check"></i>Reservas<i class="iconoDerecha fas fa-chevron-down"></i></a>
 				<ul>
 					<li><a href="reservasA.html">Reservas Realizadas</a></li>
@@ -54,30 +59,24 @@
 				</ul>
 			</li>
 		</ul>
-	</div> 
-        <!-- Parte principal -->
-        <header>
-			<h1 id="tReservaR"><strong>Reservaciones Hoy</strong> </h1>
-			<table id="tablaResR">
-				<thead><th>IdReserva</th>
-					<th>Usuario</th><th>Equipo</th><th>Fecha</th><th>Hora</th><th>Horas</th><th>Valor</th>
-					<th>Eliminar</th>
-				</thead>
-				<tbody>
-					<tr><td>1</td>
-						<td>cliente1@gmail.com</td><td>1</td><td>17/06/2020</td><td>16:00</td><td>1</td><td>$2500</td><td> <input class="caja-check" type="checkbox"> </td>
-					</tr>
-					<tr><td>2</td>
-						<td>cliente2@gmail.com</td><td>2</td><td>17/06/2020</td><td>16:00</td><td>3</td><td>$7500</td><td> <input class="caja-check" type="checkbox"> </td>
-					</tr>
-				</tbody>
-			</table>           
-        </header>
+    </div> 
+    <div class="cuerpo">
+		<section>
+            <a href="../interfaceAdmin/HistoricoR.html" class="volver"> <strong> Volver</strong></a>
+			<h1><strong>Graficas de las Reservas</strong></h1>
+			<br/>
+			<br/>
+			<h2 id="titulo2"><strong>Reservas mensuales por semestre</strong></h2>
+			<div id="GraficaR"></div>
+			<br/>
+			<br/>
+			<h2 id="titulo3"><strong>Reservas semanales por bimestre</strong></h2>
+			<br/>
+			<br>
+			<div id="GraficaR2"></div>
+			<br/>
+            <br/>
+		</section>
 	</div>
-	<div class="parteInferiorReserv">
-		<a id="boton-eliminar"href="#">
-			<strong><span class="icon-house"></span><i class="fas fa-times-circle"></i>Eliminar Reserva</strong>
-		</a>
-	</div>
-</div>        
+	<script src="../js/GraficaReservas.js"></script>
 </body>
