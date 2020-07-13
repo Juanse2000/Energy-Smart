@@ -132,126 +132,11 @@ label #cancel{
 #check:checked ~ .cuerpo{
 	margin-left: 250px;
 }
-/* Estilo pagina principal - banner */
 
-.letras-banner{
-	margin-top: 80px;
-	margin-left: 50px;
-	width: 250px;
+/* Formularios añadir un nuevo PC */
+.div-volver{
+    height: 40px;
 }
-.Eslogan-banner{
-	margin-left: 50px;	
-}
-.logo-banner{
-	margin-top: 120px;
-	margin-left: 400px;
-	width: 320px;
-}
-.resgistrate-reserva{
-	text-align: right;
-}
-.linea1{
-	margin-top: 60px;
-}
-.titulo-qs{
-	text-align: center;
-	margin-top: 60px;
-
-}
-.parrafo-qs{
-	text-align: center;
-	margin-right: 50px;
-	margin-left: 50px;
-
-}
-/* Parte del prfil */
-.perfil{
-    display: flex;
-    text-align: center;
-    height: 260px;
-    background: url("http://everynation.org/wp-content/uploads/2018/02/Monthly-Website-Header-background.jpg");
-}
-.volver-perfil{
-	margin-left: 420px;
-	font-size: 20px;
-	color: whitesmoke;
-}
-#boton-editar-admin{
-	background: rgb(255, 230, 0);
-	color: white;
-	display: inline-block;
-	font-size: 15px;
-	padding: 10px 0px;
-	width: 170px;
-	text-decoration: none;
-	text-align: center;
-	box-shadow: 2px 2px 2px rgb(189, 154, 0);
-	margin-left: 1150px;
-}
-#boton-editar-admin i{
-	margin-right: 10px;
-}
-.titulo-info{
-	text-align: center;
-}
-.perfil .lapiz{
-    padding: 10px;
-    color: whitesmoke;
-}
-.perfil #imagenAvatar{
-    margin-left: 500px;
-    width: 350px;
-    border-radius: 50%;
-}
-#tituloPer{
-    text-align: center;
-    padding-top: 20px;
-}
-.lapiz2{
-    font-size: 20px;
-    padding-right: 10px;
-}
-/* Datos */
-.iconosAvatar .iconosPerfil .editar{
-    display: flex;
-    margin-left: 170px;
-    margin-top: 100px;
-    width: 100%;
-}
-
-.iconosAvatar{
-    background: whitesmoke;
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    color: rgb(34, 34, 32);
-}
-
-.iconosAvatar .iconosPerfil i{
-    text-align: center;
-    margin-top: 20px;
-	font-size: 100px;
-	width: 100%;
-	color: goldenrod;
-}
-.iconosAvatar .iconosPerfil h4{
-	text-align: center;
-	font-size: 22px;
-}
-/* Descripcion */
-.descripcion{
-    margin-top: 100px;
-    text-align: center;
-}
-.descripcion h2{
-    margin-top: 80px;
-    text-align: center;
-}
-.descripcion p{
-    margin-top: 50px;
-    text-align: center;
-    padding-bottom: 100px;
-}
-/* Formularios de editar perfil */
 .volver-perfilA{
 	color: rgb(25, 26, 23);
 	margin-left: 1280px;
@@ -261,20 +146,20 @@ label #cancel{
 	width: 100%;
 	padding: 15px;
 }
-.formulario-editarA{
+.formulario-nuevoPC{
 	background: rgb(46, 46, 42);
 	color: whitesmoke;
-	margin-top: 80px;
+    padding-bottom: 10px;
 }
-.formulario-editarA h1{
+.formulario-nuevoPC h1{
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 input[type="text"]{
-	font-size: 20px;
-	width: 88%;
+	font-size: 15px;
+	width: 100%;
 	padding: 10px;
 	border: none;
 }
@@ -282,11 +167,7 @@ input[type="text"]{
 	margin-bottom: 15px;
 	border: 1px solid whitesmoke;
 }
-.icon-editarA{
-	min-width: 50px;
-	text-align: center;
-}
-.guardar-cambios-perfilA{
+.añadir-nuevo-pc{
 	border: none;
 	width: 100%;
 	color: whitesmoke;
@@ -296,14 +177,50 @@ input[type="text"]{
 	border-radius: 5px;
 	cursor: pointer;
 }
-.guardar-cambios-perfilA:hover{
+.añadir-nuevo-pc:hover{
 	background: goldenrod;
 }
 @media(min-width:768px){
-	.formulario-editarA{
+	.formulario-nuevoPC{
 		margin: auto;
 		width: 500px;
-		margin-top: 150px;
+		margin-top: 70px;
 		border-radius: 2%;
 	}
+}
+/* Botones parte de abajo */
+#boton-añadir-preventivo{
+	background: rgb(0, 140, 255);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+	width: 250px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgb(0, 34, 185);
+	margin-left: 400px;
+	margin-top: 40px;
+}
+#boton-graficasR span{
+	margin-right: 10px;
+}
+#boton-añadir-correctivo{
+	background: rgb(255, 10, 10);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+	width: 250px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgb(128, 0, 0);
+	margin-left: 30px;
+	margin-top: 40px;
+}
+.parteInferiorReserv a i{
+	margin-right: 10px;
+}
+.parteInferiorReserv{
+	margin-bottom: 70px;
 }

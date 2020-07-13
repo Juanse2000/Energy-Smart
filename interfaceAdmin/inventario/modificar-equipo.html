@@ -5,7 +5,7 @@
 	<meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Enlaza CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/configuracionP.css">
+	<link rel="stylesheet" type="text/css" href="../../css/nuevoPc.css">
 	<!-- Iconos -->
 	<script src="https://kit.fontawesome.com/d3a62d8a35.js" crossorigin="anonymous"></script>
 	<!-- Fuente Monserrat -->
@@ -54,48 +54,54 @@
 				</ul>
 			</li>
 		</ul>
-	</div>         	
-    <div class="perfil">        
-        <img src="../imagenes/logoListo.png" id="imagenAvatar" alt="Cambiar foto de perfil">       
+    </div>  
+    <div class="div-volver">
+        <a href="../Inventario.html" class="volver-perfilA"><strong>Volver</strong></a>
     </div>
-    <h1 id="tituloPer">Sebastian Martinez</h1>
-    <a id="boton-editar-admin" href="editar-perfil/editar-admin.html">
-        <strong><span class="icon-house"></span><i class="fas fa-user"></i>Editar Perfil</strong>
-    </a>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <h2 class="titulo-info">Informacion</h2>
-    <div class="iconosAvatar">
-        <div class="iconosPerfil">
-            <a href="#" class="editar">Editar Email</a>
-            <br/>
-            <i class="fas fa-envelope-open"></i>	
-            <br/>
-            <br/>
-            <h4><strong>sebas_Mar@gmail.com</strong></h4><br/>		
+    <form class="formulario-nuevoPC">
+        <h1>Modificar partes del PC</h1>
+        <div class="contenedor-editar">
+            <div class="input-contenedor">
+                <input type="text" placeholder="Procesador" id="nuevo-procesador">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" placeholder="Ram" id="nuevo-ram">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" placeholder="Tarjeta Grafica" id="nuevo-tarjeta-grafica">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" placeholder="almacenamiento" id="nuevo-almacenamiento">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" placeholder="Pantalla" id="nuevo-pantalla">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" placeholder="Board" id="nuevo-board">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" placeholder="Fuente" id="nuevo-fuente">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" placeholder="Chasis" id="nuevo-chasis">
+            </div>
+            <input type="submit" value="Guardar Cambios" class="añadir-nuevo-pc" id="añadir-nuevo-pc">
         </div>
-        <div class="iconosPerfil">
-            <a href="#" class="editar">Editar Nombre</a>
-            <br/>
-            <i class="fas fa-user-tie"></i>
-            <br/>
-            <br/>
-            <h4><strong>Sebastian Martinez</strong></h4><br/>
-        </div>
-        <div class="iconosPerfil">
-            <a href="#" class="editar">Editar numero</a>
-            <br/>
-            <i class="fas fa-mobile"></i>
-            <br/>
-            <br/>
-            <h4><strong>+57 3154796632</strong></h4><br/>
-        </div>
-    </div>
+    </form>   
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="parteInferiorReserv">
+        <a id="boton-añadir-preventivo" href="form-prev.html">
+            <strong><span class="icon-house"></span><i class="fas fa-check-circle"></i>Enviar PC a Mantenimiento Preventivo</strong>
+        </a>
+        <a id="boton-añadir-correctivo" href="form-cor.html">
+            <strong><span class="icon-house"></span><i class="fas fa-tools"></i>Enviar PC a Mantenimiento Correctivo</strong>
+        </a>
+    </div> 
+    <br/>
+    <br/>
+	<script src="../../js/adminJS/modificarPC.js"></script>
 </body>
 </html>

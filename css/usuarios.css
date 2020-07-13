@@ -218,3 +218,20 @@ label #cancel{
     text-align: center;
     padding-bottom: 100px;
 }
+#boton-eliminar-usuario{
+	background: rgb(255, 72, 0);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+	width: 170px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgb(190, 0, 0);
+	margin-left: 1100px;
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+.icon-eliminar{
+	margin-right: 10px;
+}
