@@ -5,30 +5,25 @@
 	<meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Enlaza CSS -->
-	<link rel="stylesheet" type="text/css" href="../../css/usuarios.css">
+	<link rel="stylesheet" type="text/css" href="../css/usuarios.css">
 	<!-- Iconos -->
 	<script src="https://kit.fontawesome.com/d3a62d8a35.js" crossorigin="anonymous"></script>
 	<!-- Fuente Monserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">	
-		<!-- -Navegacion -->	
-		<nav class="menu">
-			<a href="usuario1.html"><img src="../imagenes/logo.png" class="logo"></a>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li><a href="../InterfazCliente.html"><strong>Volver</strong></a></li>
-			</ul>
-        </nav>
-    </div>
+    <!-- -Navegacion -->	
+	<nav class="menuNav">
+		<ul>
+			<li><a href="../quienes-somos.html"><strong>Quienes somos</strong></a></li>
+			<li><a href="../contacto.html"><strong>Contacto</strong></a></li>
+			<li><a href="../index.html"><strong>Cerrar Sesion</strong></a></li>
+		</ul>
+	</nav>	        	
+	<div class="cuerpo-perfil">
     <div class="perfil">
-        <img src="../imagenes/perfilAvatarH.jpg" id="imagenAvatar">
+        <a href="../InterfazCliente.html" class="volver-perfil"><strong>Volver</strong></a>
+        <img src="../../imagenes/perfilAvatarH.jpg" id="imagenAvatar">
         <h1>FelipeGamer20</h1>
     </div>
     <br/>
@@ -92,6 +87,11 @@
             shooters.
         </em>
         </p>
+        <br/>  
+        <a id="boton-eliminar-usuario" href="cliente-config.html">
+            <strong><span class="icon-house"></span><i class="fas fa-tools icon-eliminar"></i>Configuracion</strong>
+            </a>      
     </div>
+</div>	
 </body>
 </html>

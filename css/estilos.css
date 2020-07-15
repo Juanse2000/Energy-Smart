@@ -238,6 +238,8 @@ input[id="3"]:checked ~ .paginacion .paginacion-item[for="3"]{
 .footer-container ul{
 	display: flex;
 }
+
+
 #tReservaR{
 	text-align: center;
 }

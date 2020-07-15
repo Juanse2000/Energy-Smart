@@ -26,43 +26,44 @@
 				<li><a href="../index.html"><strong>Cerrar Sesion</strong></a></li>
 			</ul>
         </nav>
-	</div>
-	
+    </div>
+    <a href="Perfil.html" class="volver-perfil"><strong>Volver</strong></a>
 	<form class="formulario-editarA">
-        <h1>Realizar Reserva</h1>
+        <h1>Editar Perfil</h1>
+        <h2>Edite los campos que quiera modificar</h2>
         <div class="contenedor-editar">
             <div class="input-contenedor">
-                <i class="fas fa-user icon-editarA"></i>
-                <input type="text" placeholder="Numero de identificacion" id="nombre-nuevo-admin">
+                <i class="fas fa-user-ninja icon-editarA"></i>
+                <input type="text" placeholder="Nombre de usuario" id="nombre-usuario-cliente">
             </div>
             <div class="input-contenedor">
-                <i class="fas fa-passport icon-editarA"></i>
-                <input type="text" placeholder="codigo Equipo" id="celular-admin">
+                <i class="fas fa-user icon-editarA"></i>
+                <input type="text" placeholder="Nombre y Apellidos" id="nombre-completo-cliente">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-seedling icon-editarA"></i>
+                <input type="text" placeholder="Edad" id="edad-cliente">
 			</div>
 			<div class="input-contenedor">
-                <i class="fas fa-calendar-alt icon-editarA"></i>
-                <input type="date" placeholder="Fecha" id="nombre-nuevo-admin">
+                <i class="fas fa-mobile icon-editarA"></i>
+                <input type="text" placeholder="Numero de celular" id="celular-cliente">
             </div>
             <div class="input-contenedor">
-                <i class="far fa-clock icon-editarA"></i>
-                <input type="time" placeholder="Hora en que va a utilizar el Equipo" id="celular-admin">
+                <i class="fas fa-dragon icon-editarA"></i>
+                <input type="text" placeholder="Grupo o Crew" id="grupo-cliente">
             </div>
-			<input type="submit" value="Realizar Reserva" class="guardar-cambios-perfilA" id="guardar-cambios-perfilA">
-			<p>Todas las reservas tienen un valor de 2.500 COP <br/>
-				<br/>
-				Recuerde pagar la reserva al momento de llegar a Energy eSports Center para poder utilizar el equipo reservado.
-			</p>
+            <div class="input-contenedor">
+                <i class="fas fa-key icon-editarA"></i>
+                <input type="password" placeholder="Grupo o Crew" id="contraseña-cliente">
+            </div>
+			<input type="submit" value="Guardar Cambios" class="guardar-cambios-perfilA" id="guardar-cambios-perfilC">
         </div>
 	</form> 
-	<div class="footer-reserva">
-		<h2> <strong> ¿Ya Realizo una Reserva?</strong></h2>
-		<div class="parteInferiorReserv">
-			<a id="boton-añadir" href="estado-reserva.html">
-				<strong><span class="icon-house"></span><i class="fas fa-eye"></i>Ver Estado de Reserva</strong>
-			</a>
-		</div> 
-	</div>
 	<br/>
 	<br/>
-	<br/>
+    <br/>
+    <a id="boton-eliminar-usuario-cliente" href="#">
+        <strong><span class="icon-house"></span><i class="fas fa-user-times icon-eliminar"></i>Eliminar Usuario</strong>
+    </a> 
+    <script src="../js/clienteJS/editar-perfil.js"></script>
 </body>

@@ -157,7 +157,8 @@ label #cancel{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-input[type="text"]{
+input[type="text"],
+	[type = "date"]{
 	font-size: 15px;
 	width: 100%;
 	padding: 10px;
@@ -166,6 +167,13 @@ input[type="text"]{
 .input-contenedor{
 	margin-bottom: 15px;
 	border: 1px solid whitesmoke;
+} 
+.input-contenedor textarea{
+	font-size: 15px;
+	width: 100%;
+	padding: 10px;
+	border: none;
+
 }
 .añadir-nuevo-pc{
 	border: none;

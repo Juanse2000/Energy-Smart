@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina Principal</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/admin.css">
+	<!-- Iconos -->
+	<script src="https://kit.fontawesome.com/d3a62d8a35.js" crossorigin="anonymous"></script>
+	<!-- Lupa -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	<!-- Fuente Monserrat -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap" rel="stylesheet">
+	
+</head>  
+<body>
+	<input type="checkbox" id="check">
+	<label for="check">
+	<i class=" fas fa-bars" id="btn"></i>
+	<i class=" fas fa-times" id="cancel"></i>
+	</label>
+	<nav class="menuNav">
+		<ul>
+			<li><a href="quienes-somosA.html"><strong>Quienes somos</strong></a></li>
+			<li><a href="contactoA.html"><strong>Contacto</strong></a></li>
+			<li><a href="../../index.html"><strong>Cerrar Sesion</strong></a></li>
+		</ul>
+	</nav>	
+	<div class="sidebar" id="ContMenu">
+		<header><a href="InterfazAdmin.html" class="Logo"><img src="../../imagenes/logo.png" class="logoAdminI"></a></header>
+		<ul class="menuAdmin">
+			<li><a href="../../InterfazAdmin.html"><i class="iconoIzquierda fas fa-home"></i>Inicio administradores</a></li>
+			<li><a href=""><i class="iconoIzquierda fas fa-calendar-check"></i>Reservas<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="interfaceAdmin/reservasA.html">Reservas Realizadas</a></li>
+					<li><a href="interfaceAdmin/reservasH.html">Reservas Hoy</a></li>
+					<li><a href="interfaceAdmin/HistoricoR.html">Historico Reservas</a></li>
+				</ul>
+			</li>
+			<li class="activado"><a href="#"><i class="iconoIzquierda fas fa-box-open"></i>Inventario<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="interfaceAdmin/Inventario.html">Inventario</a></li>
+					<li><a href="interfaceAdmin/Prevencion.html">Equipos en Prevencion</a></li>
+					<li><a href="interfaceAdmin/Mantenimiento.html">Equipos en mantenimiento</a></li>					
+				</ul>			
+			</li>
+			<li class="activado"><a href="#"><i class="iconoIzquierda fas fa-users"></i>Usuarios<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="interfaceAdmin/Usuarios.html">Todos los usuarios</a></li>
+				</ul>			
+			</li>
+			<li class="activado"><a href=""><i class="iconoIzquierda fas fa-user-check"></i>Perfil<i class="iconoDerecha fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="interfaceAdmin/Configuracion.html">Ver Perfil</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div> 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p id="contacto"></p>
+	<div class="footer-link">
+		<div class="footer-container">
+			<ul>
+				<li><a href="https://www.facebook.com/energy.esportscenter/">
+					<i class="fab fa-facebook-square"></i>
+				</a></li>
+				<li><a href="https://www.instagram.com/energy.esport/">
+					<i class="fab fa-instagram"></i>
+				</a></li>
+			</ul>
+            <form class="formulario-editarA">
+                <h1>¡Envianos un mensaje</h1>
+                <div class="contenedor-editar">
+                    <div class="input-contenedor">
+                        <i class="fas fa-user icon-editarA"></i>
+                        <input type="text" placeholder="Nombres" id="nombre-nuevo-admin">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fas fa-mobile icon-editarA"></i>
+                        <input type="text" placeholder="Celular" id="nombre-nuevo-admin">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fas fa-envelope icon-editarA"></i>
+                        <input type="text" placeholder="Correo electronico" id="celular-admin">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fas fa-paper-plane icon-editarA"></i>
+                        <textarea placeholder="Mensaje" id="text-area-mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="guardar-cambios-perfilA" id="guardar-cambios-perfilA">
+                </div>
+            </form> 
+			<p class="parrafo-footer">
+				<br/>
+				<br/>
+				¿Listo para vivir la mejor experiencia Gamer con nosotros?<br/>				
+				¡Contactanos!
+			</p>	
+			<div class="iconos-footer">
+				<div>
+					<i class="fab fa-whatsapp"></i>	
+					<br/>
+					<p>+57 3197726289</p>
+				</div>
+				<div>
+					<i class="far fa-envelope"></i>
+					<br/>
+					<p>energyesportscenter@gmail.com</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
