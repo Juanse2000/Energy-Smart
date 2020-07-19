@@ -267,3 +267,74 @@ thead{
 tr:nth-child(even){
 	background-color: rgb(180, 180, 180);
 }
+/* Formulario Reservas */
+.contenedor-editar{
+	margin-top: 50px;
+	width: 100%;
+	padding: 15px;
+}
+#area-mensaje{
+	width: 100%;
+}
+.formulario-editarA{
+	background: whitesmoke;
+	color: rgb(46, 46, 42);
+	margin-top: 80px;
+}
+.formulario-editarA h1{
+	text-align: center;
+	font-size: 40px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.formulario-editarA h2{
+	text-align: center;
+	font-size: 20px;
+}
+input[type="text"],
+	[type="date"],
+	[type="time"],
+	[type="password"]{
+	font-size: 20px;
+	width: 88%;
+	padding: 10px;
+	border: none;
+}
+.input-contenedor{
+	margin-bottom: 15px;
+	border: 1px solid whitesmoke;
+}
+.icon-editarA{
+	min-width: 50px;
+	text-align: center;
+}
+.guardar-cambios-perfilA{
+	border: none;
+	width: 100%;
+	color: whitesmoke;
+	font-size: 20px;
+	background: gold;
+	padding: 15px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 30px;
+}
+.guardar-cambios-perfilA:hover{
+	background: goldenrod;
+}
+.contenedor-editar p{
+	text-align: center;
+	margin-top: 20px;
+}
+#text-area-mensaje{
+	width: 100%;
+}
+@media(min-width:768px){
+	.formulario-editarA{
+		margin: auto;
+		width: 500px;
+		height: 680px;
+		margin-top: 80px;
+		border-radius: 2%;
+	}
+}

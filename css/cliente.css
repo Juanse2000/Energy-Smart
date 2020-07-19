@@ -94,6 +94,12 @@ input[type="text"],
 	padding: 10px;
 	border: none;
 }
+select{
+	font-size: 20px;
+	width: 100%;
+	padding: 10px;
+	border: none;
+}
 .input-contenedor{
 	margin-bottom: 15px;
 	border: 1px solid whitesmoke;
@@ -127,7 +133,7 @@ input[type="text"],
 	.formulario-editarA{
 		margin: auto;
 		width: 500px;
-		height: 680px;
+		height: 720px;
 		margin-top: 80px;
 		border-radius: 2%;
 	}

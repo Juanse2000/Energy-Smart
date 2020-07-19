@@ -272,7 +272,8 @@ label #cancel{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-input[type="text"]{
+input[type="text"],
+	[type="password"]{
 	font-size: 20px;
 	width: 88%;
 	padding: 10px;

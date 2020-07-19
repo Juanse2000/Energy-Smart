@@ -1,7 +1,8 @@
 window.onload = function(){
     document.getElementById("añadir-nuevo-pc").onclick=añadirEquipo;    
 }
-function añadirEquipo(){
+function añadirEquipo(event){
+  event.preventDefault();
     var procesador = document.getElementById("nuevo-procesador").value;
     var ram = document.getElementById("nuevo-ram").value;
     var tarjeta = document.getElementById("nuevo-tarjeta-grafica").value;
@@ -81,11 +82,25 @@ function añadirEquipo(){
         alert("Nombre chasis debe tener: minimo 4 caracteres | maximo 20 caracteres");
 		return false;
     }
-    var respuestaPC = confirm("¿Desea guardar los cambios?")
-    if(respuestaPC == true){
-        return true;
-    }
-    else{
-        return false;
-    }    
+    Swal.fire({
+      title: "¿Seguro que quiere modificar las partes del equipo?",
+      icon: 'warning',
+      confirmButtonText: 'Si, modificar',
+      showCancelButton: true,
+      cancelButtonText: 'Cancelar',
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+  
+      /* Opcions cerrar alerta */
+      allowOutsideClick: true,
+      allowEscapeKey: true
+  }).then((result) => {
+      if (result.value) {
+          Swal.fire(
+          'Modificación',
+          'Se han modificado las partes del equipo',
+          'success'
+      )
+  }
+  });  
 }

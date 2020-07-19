@@ -1,7 +1,8 @@
 window.onload = function(){
     document.getElementById("añadir-nuevo-pc").onclick=añadirEquipo;    
 }
-function añadirEquipo(){
+function añadirEquipo(event){
+  event.preventDefault();
     var procesador = document.getElementById("nuevo-procesador").value;
     var ram = document.getElementById("nuevo-ram").value;
     var tarjeta = document.getElementById("nuevo-tarjeta-grafica").value;
@@ -81,11 +82,9 @@ function añadirEquipo(){
         alert("Nombre chasis debe tener: minimo 4 caracteres | maximo 20 caracteres");
 		return false;
     }
-    var respuestaPC = confirm("¿Desea añadir un nuevo PC?")
-    if(respuestaPC == true){
-        return true;
-    }
-    else{
-        return false;
-    }    
+    Swal.fire({
+      title: "Nuevo Equipo Añadido al Inventario",
+      icon: 'success',
+      showConfirmButton: true,
+  }); 
 }

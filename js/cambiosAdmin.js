@@ -1,9 +1,11 @@
 window.onload = function(){
     document.getElementById("guardar-cambios-perfilA").onclick=validarCel;    
 }
-function validarCel(){
+function validarCel(event){
+  event.preventDefault();
     var celular = document.getElementById("celular-admin").value;
     var nuevoNombre = document.getElementById("nombre-nuevo-admin").value;
+    var contraseña = document.getElementById("nuevo-contraseña").value;
 
     expresion =  /\w/;
     telefono = /\d/;
@@ -28,12 +30,34 @@ function validarCel(){
         alert("El campo TELEFONO es de 10 caracteres");
 		return false;
     }
+    else if(!(expresion.test(contraseña))){
+      alert("Contraseña no valida")
+      return false;
+      }
+      else if(contraseña.length > 25 || contraseña.length < 6){
+          alert("La contraseña debe tener entre 6 y 25 caracteres");
+      return false;
+      }
+    Swal.fire({
+      title: "¿Seguro que quiere guardar los cambios?",
+      icon: 'warning',
+      confirmButtonText: 'Si, guardar',
+      showCancelButton: true,
+      cancelButtonText: 'Cancelar',
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+  
+      /* Opcions cerrar alerta */
+      allowOutsideClick: true,
+      allowEscapeKey: true
+  }).then((result) => {
+      if (result.value) {
+          Swal.fire(
+          'Guardado',
+          'La nueva informacion ha sido guardada',
+          'success'
+      )
+  }
+  });
     
-    var respuesta = confirm("¿Desea guardar los cambios?")
-    if(respuesta == true){
-        return true;
-    }
-    else{
-        return false;
-    }
 }

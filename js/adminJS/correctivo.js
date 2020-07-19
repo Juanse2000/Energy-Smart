@@ -1,7 +1,8 @@
 window.onload = function(){
     document.getElementById("añadir-cor").onclick=añadirEquipoC;    
 }
-function añadirEquipoC(){
+function añadirEquipoC(event){
+  event.preventDefault();
     var codigoPC = document.getElementById("codigo-equipo-cor").value;
     var fechaIngreso = document.getElementById("fecha-cor").value;
     var tipo = document.getElementById("tipo-cor").value;
@@ -29,12 +30,26 @@ function añadirEquipoC(){
         alert("CodigoPC debe tener: minimo 4 caracteres | maximo 20 caracteres");
 		return false;
     } 
-    var respuestaPC = confirm("¿Desea guardar los cambios?")
-    if(respuestaPC == true){
-        return true;
-    }
-    else{
-        return false;
-    }   
+    Swal.fire({
+      title: "¿Seguro que quiere añadir el equipo a mantenimiento correctivo?",
+      icon: 'warning',
+      confirmButtonText: 'Si, añadir',
+      showCancelButton: true,
+      cancelButtonText: 'Cancelar',
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+  
+      /* Opcions cerrar alerta */
+      allowOutsideClick: true,
+      allowEscapeKey: true
+  }).then((result) => {
+      if (result.value) {
+          Swal.fire(
+          'Añadir',
+          'Ha añadido el equipo a mantenimiento correctivo',
+          'success'
+      )
+  }
+  });  
 
 }

@@ -33,20 +33,41 @@
         <div class="contenedor-editar">
             <div class="input-contenedor">
                 <i class="fas fa-user icon-editarA"></i>
-                <input type="text" placeholder="Numero de identificacion" id="nombre-nuevo-admin">
+                <input type="text" placeholder="Numero de identificacion" id="identificacion-cliente">
             </div>
             <div class="input-contenedor">
-                <i class="fas fa-passport icon-editarA"></i>
-                <input type="text" placeholder="codigo Equipo" id="celular-admin">
+				<i class="fas fa-passport icon-editarA"></i>
+				<label for="option-pc">Seleccione un Equipo</label>
+                <select id="option-pc" name="Seleccione un equipo">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
 			</div>
 			<div class="input-contenedor">
                 <i class="fas fa-calendar-alt icon-editarA"></i>
                 <input type="date" placeholder="Fecha" id="nombre-nuevo-admin">
-            </div>
-            <div class="input-contenedor">
-                <i class="far fa-clock icon-editarA"></i>
-                <input type="time" placeholder="Hora en que va a utilizar el Equipo" id="celular-admin">
-            </div>
+			</div>
+			<div class="input-contenedor">
+				<i class="fas fa-passport icon-editarA"></i>
+				<label for="option-pc">Seleccione una hora para reservar</label>
+                <select id="option-pc" name="Seleccione un equipo">
+					<option>9:00</option>
+					<option>10:00</option>
+					<option>11:00</option>
+					<option>12:00</option>
+					<option>13:00</option>
+					<option>14:00</option>
+					<option>15:00</option>
+					<option>16:00</option>
+					<option>17:00</option>
+					<option>18:00</option>
+					<option>19:00</option>
+				</select>
+			</div>
 			<input type="submit" value="Realizar Reserva" class="guardar-cambios-perfilA" id="guardar-cambios-perfilA">
 			<p>Todas las reservas tienen un valor de 2.500 COP <br/>
 				<br/>
