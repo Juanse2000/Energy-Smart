@@ -46,64 +46,92 @@ ul{
 }
 
 
+/* Nuevo formulario */
+.volver-perfilA{
+	color: rgb(25, 26, 23);
+	margin-left: 1280px;
+	font-size: 20px;
+}
+.contenedor-editar{
+	width: 100%;
+	padding: 15px;
+}
+.formulario-login{
+	background: whitesmoke;
+	color: rgb(46, 46, 42);
+	margin-top: 80px;
+}
+.formulario-login h1{
+	text-align: center;
+	font-size: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+input[type="text"],
+    [type="password"],
+    [type="email"]{
+	font-size: 20px;
+	width: 88%;
+	padding: 10px;
+	border: none;
+}
+#boton-iniciar-sesion{
+	width: 100%;
+	height: 50px;
+	background: gold;
+	font-size: 20px;
+	border-radius: 4%;
+	border-color: rgb(25, 26, 24);
+	cursor: pointer;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+#boton-iniciar-sesion:hover{
+	background: goldenrod;
+}
+.input-contenedor{
+	margin-bottom: 15px;
+	border: 1px solid whitesmoke;
+}
+.icon-editarA{
+	min-width: 50px;
+	text-align: center;
+}
+.guardar-cambios-perfilA{
+	border: none;
+	width: 100%;
+	color: whitesmoke;
+	font-size: 20px;
+	background: gold;
+	padding: 15px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.guardar-cambios-perfilA:hover{
+	background: goldenrod;
+}
+.formulario-abajo1{
+    color: rgb(27, 27, 26);
+    margin-top: 300px;
+    margin-left: 80px;
+}
+.formulario-abajo2{
+    color: rgb(27, 27, 26);
+    margin-top: 500px;
+    margin-left: 120px;
+}
+.formulario-abajo3{
+    color: rgb(27, 27, 26);
+    margin-top: 500px;
+    margin-left: 200px;
+}
 
-
-.form-register{
-    text-align: center;
-    width: 400px;
-    background: #f6f7e5;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius:4px;
-    font-family:cursive;
-    color: rgb(31, 31, 31);
-    box-shadow: 7px 13px 37px #000;
-   
-}
-.form-register h4{
-    font-size: 22px;
-    margin-bottom: 20px;
-    
-}
-.controls {
-    width: 100%;
-    background: #252522;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #ffe600;
-    font-family: calibri;
-    font-size: 18px;
-    color: white;
-}
-.form-register p{
-     height: 40px;
-    text-align: center;
-    font-size: 18px;
-    
-    
-}
-
-.form-register a{
-    color: white;
-    text-decoration: none;
-}
-.form-register a:hover{
-    color: white;
-    text-decoration: underline;
-}
-
-form button{
-    width: 125px;
-    height: 40px;
-    margin: 20px 0px 30px 18px;
-    background: rgb(255, 255, 255)
-    border 1px solid rgb(255, 238, 0);
-    color: #000000;
-    
-}
-.form-register a{
-    color: #1d1e1f;
-    
+@media(min-width:768px){
+	.formulario-login{
+		margin: auto;
+        width: 500px;
+        height: 480px;
+		margin-top: 150px;
+		border-radius: 2%;
+		margin-bottom: 50px;
+	}
 }

@@ -7,7 +7,7 @@
     <!-- Enlaza CSS -->
     <link rel="stylesheet" type="text/css" href="css/formularios.css">
     <!-- Enlaza JavasCript -->
-    <script src="js/registro.js"></script>
+    
     <!-- Lupa -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <!-- Fuente Monserrat -->
@@ -36,20 +36,39 @@
         </nav>
     </div>
     <header>
-        <form class="form-register" id="registro" onsubmit="return validarformulario();">
-            <h4>Formulario de registro</h4>
-            <input class="controls" type="text" name="nombreR" id="nombreR" placeholder="Nombre de usuario">
-            <input class ="controls"  type="password" name="contraseñaR" id="contraseñaR" placeholder="Contraseña">
-            <input  class ="controls" type="email" name="emailR" id="emailR" placeholder="Email">
-               
-            <button formaction="InterfazCliente.html" class ="botons" id="enviar" type="submit" value="Iniciar sesion">Registrarme</button>
-            <br/>
-            <a href="sesion.html">Ya tengo cuenta</a><br/>
-            <a href="index.html">Volver</a>
-        
+        <form class="formulario-login" id="registro" onsubmit="return validarformulario();">
+            <h1>Registrarse</h1>
+            <div class="contenedor-editar">
+                <div class="input-contenedor">
+                    <i class="fas fa-user-ninja icon-editarA"></i>
+                    <input type="text" placeholder="Nombre de usuario" id="nombre-iniciar-sesion">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon-editarA"></i>
+                    <input type="email" placeholder="Correo Electronico" id="correo-iniciar-sesion">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-user icon-editarA"></i>
+                    <input type="text" name="option-rol" id="option-rol" placeholder="Rol" list="roles">
+                    <datalist id="roles">
+                        <option id="adm" value="Administrador"></option>
+                        <option id="cli" value="Cliente"></option>
+                    </datalist>
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon-editarA"></i>
+                    <input type="password" placeholder="Contraseña" id="contraseña-iniciar-sesion">
+                </div>
+                <input type="submit" value="Registrarse" class="guardar-cambios-perfilA" id="registrarse-iniciar">
+                <br/>
+                <br/>
+            <a href="sesion.html" class="formulario-abajo1"> <strong> ¡Ya tengo cuenta!  ¡ Vamos a jugar!</strong></a><br/>
+            <a href="index.html" class="formulario-abajo3"><strong>Volver</strong></a>
+            </div>        
         </form>
         
     </header>
+    <script src="js/registro.js"></script>
 </body>
     
 </html>

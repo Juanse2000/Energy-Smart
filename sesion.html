@@ -7,7 +7,7 @@
     <!-- Enlaza CSS -->
     <link rel="stylesheet" type="text/css" href="css/formularios.css">
     <!-- Enlaza JavasCript -->
-    <script src="js/login.js"></script>
+    
     <!-- Lupa -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <!-- Fuente Monserrat -->
@@ -36,19 +36,34 @@
         </nav>
     </div>
     <header>
-        <form class="form-register" id="formularioLogin" onsubmit="return validarLogin();">
-            <h4>Iniciar Sesion</h4>
-            <input class="controls" type="email" id="EmailL" placeholder="Email">
-            <input class ="controls"  type="password" id="ContraseñaL" placeholder="Contraseña">                           
-            <button formaction="InterfazAdmin.html" class ="botons" id="boton" type="submit" value="Iniciar sesion">Iniciar sesion</button>
-            <br/>
-            <a href="registrar.html">¿No tienes cuenta?</a><br/>
-            <a href="RecuContraseña.html">¿Olvido su contraseña?</a><br/>
-            <a href="index.html">Volver</a>
-        </form>
-        
+        <form class="formulario-login" name="formularioLogin">
+            <h1>Iniciar Sesion</h1>
+            <div class="contenedor-editar">
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon-editarA"></i>
+                    <input type="email" placeholder="Correo Electronico" id="correo-iniciar-sesion">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-user icon-editarA"></i>
+                    <input type="text" name="option-rol" id="option-rol" placeholder="Rol" list="roles">
+                    <datalist id="roles">
+                        <option id="adm" value="Administrador"></option>
+                        <option id="cli" value="Cliente"></option>
+                    </datalist>
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon-editarA"></i>
+                    <input type="password" placeholder="Contraseña" id="contraseña-iniciar-sesion">
+                </div>
+                <button type="submit" id="boton-iniciar-sesion" class="button" onsubmit="return validar(e)"> <strong>Iniciar Sesion</strong> </button>
+                <br/>
+                <br/>
+            <a href="registrar.html" class="formulario-abajo1"> <strong> ¿No tienes cuenta? Registrate Ahora </strong></a><br/>
+            <a href="RecuContraseña.html" class="formulario-abajo2"><strong>¿Olvido su contraseña?</strong></a><br/>
+            <a href="index.html" class="formulario-abajo3"><strong>Volver</strong></a>
+            </div>
+        </form>       
     </header>
-    
+    <script src="js/login.js"></script>
     </body>
-    
 </html>

@@ -178,6 +178,18 @@ tr:nth-child(even){
 	margin-left: 35px;
 }
 /* Parte inferior */
+.boton-eliminarR{
+	background: rgb(255, 60, 0);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+    margin-left: 10px;
+	width: 50px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgb(221, 0, 0);
+}
 #boton-eliminar{
 	background: rgb(255, 60, 0);
 	color: white;
