@@ -190,6 +190,19 @@ tr:nth-child(even){
 	text-align: center;
 	box-shadow: 2px 2px 2px rgb(221, 0, 0);
 }
+#boton-descargarU{
+	background: rgb(0, 132, 255);
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 0px;
+	width: 170px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgb(48, 0, 221);
+	margin-left: 270px;
+	margin-top: 40px;
+}
 #boton-eliminar{
 	background: rgb(255, 60, 0);
 	color: white;
